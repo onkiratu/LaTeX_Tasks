@@ -1,0 +1,187 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry} 
+\usepackage{amsmath}
+
+
+\geometry{headsep=10pt,top=20pt}
+% \DeclareMathSizes{12}{20}{14}{10}
+
+\title{LaTeX Math 2}
+\author{Kiratu Onesmas}
+\date{August 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Equations}
+\LaTeX\vspace{10pt}
+
+
+\subsection{Adding Text to Equations}
+
+% with referencing equations
+\begin{equation}
+50 \, apples \times \, 100 \, apples = \, lots \, of \, apples
+\end{equation}
+\vspace{10pt}
+
+% without referencing equations
+
+\begin{equation*}
+50 \text{ apples} \times 100 \text{ apples} = \text{lots of apples}
+\end{equation*}
+\vspace{10pt}
+
+\subsection{Using mBox to Space Text}
+\begin{equation}
+50 \mbox{ apples} \times 100 \mbox{ apples} =
+\mbox{lots of apples}
+\end{equation}
+
+\subsection{Formatted Text}
+% use \textrm, \textit, textbf etc instead of mbox
+%textrm = Roman Text
+
+\begin{equation}
+50 \textrm{apples} \times 100 \textbf{apples} =
+\textit{lots of apples}
+\end{equation}
+\vspace{10pt}
+
+\begin{equation}
+50 \textit{ apples} \times 100 \texttt{ apples} =
+\textbf{ lots of apples}
+\end{equation}
+\vspace{10pt}
+
+
+% Math Formatting Commands 
+% \mathrm{...} Roman
+% \mathit{...} Italic
+% \mathbf{...} Bold
+% \mathsf{...} Sans serif
+% \mathtt{...} Typewriter
+% \mathcal{...}
+
+In mathematics, the speed of light is denoted by $c = 3 \times 10^8 \, \mathrm{m/s}$.
+
+\subsection{Changing Text Size of Equations}
+% \displaystyle Size for equations in display mode
+% \textstyle Size for equations in text mode
+% \scriptstyle Size for first sub/superscripts
+% \scriptscriptstyle Size for subsequent sub/superscripts
+
+\begin{equation} x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}
+\end{equation}
+\vspace{10pt}
+
+%\DeclareMathSizes{10}{18}{12}{8} % For size 10 text
+%\DeclareMathSizes{11}{19}{13}{9} % For size 11 text
+%\DeclareMathSizes{12}{20}{14}{10} % For size 12 
+
+\subsection{Multi-lined Equations (eqnarray environment}
+
+\begin{tabular}{ r l }
+\(10xy^2+15x^2y-5xy\) & \(= 5\left(2xy^2+3x^2y-xy\right)\)\\
+& \(= 5x\left(2y^2+3xy-y\right)\) \\
+& \(= 5xy\left(2y+3x-1\right)\)
+\end{tabular}
+\vspace{10pt}
+
+\begin{tabular}{ r c l }
+\(10xy^2+15x^2y-5xy\) & \(=\) & \(5\left(2xy^2+3x^2y-xy\right)\) \\
+& \(=\) & \(5x\left(2y^2+3xy-y\right)\) \\
+& \(=\) & \(5xy\left(2y+3x-1\right)\)
+\end{tabular}
+\vspace{10pt}
+
+\begin{eqnarray}
+10xy^2+15x^2y-5xy & = & 5\left(2xy^2+3x^2y-xy\right) \nonumber \\
+& = & 5x\left(2y^2+3xy-y\right) \nonumber \\
+& = & 5xy\left(2y+3x-1\right)
+\end{eqnarray}
+\vspace{10pt}
+
+\subsection{Breaking Up Long Equations}
+\begin{eqnarray*}
+\left(1+x\right)^n & = & 1 + nx + \frac{n\left(n-1\right)}{2!}x^2 \\
+& & {} + \frac{n\left(n-1\right)\left(n-2\right)}{3!}x^3 \\
+& & {} + \frac{n\left(n-1\right)\left(n-2\right)\left(n-3\right)}{4!}x^4 \\
+& & {} + \ldots
+\end{eqnarray*}
+\vspace{10pt}
+
+\begin{eqnarray*}
+\lefteqn{\left(1+x\right)^n = } \\
+& & 1 + nx + \frac{n\left(n-1\right)}{2!}x^2 + \\
+& & \frac{n\left(n-1\right)\left(n-2\right)}{3!}x^3 + \\
+& & \frac{n\left(n-1\right)\left(n-2\right)\left(n-3\right)}{4!}x^4 + \\
+& & \ldots
+\end{eqnarray*}
+\vspace{10pt}
+
+\subsection{Controlling Horizontal Spacing}
+\subsubsection{f with large curls} 
+
+\[f(n) = \left\{
+\begin{array}{l l}
+n/2 & \quad \mbox{if $n$ is even}\\ -(n+1)/2 & \quad \mbox{if $n$ is odd}\\ \end{array} \right. \]
+
+\[
+f(n) = \left\{
+\begin{array}{l l}
+n/2 & \quad \mbox{if $n$ is even}\\ -(n+1)/2 & \quad \mbox{if $n$ is odd}\\ \end{array} \right. 
+\]
+\vspace{10pt}
+
+\[f(n) =
+\begin{cases}
+n/2 & \text{if $n$ is even} \\
+-(n+1)/2 & \text{if $n$ is odd}
+\end{cases}
+\]
+\vspace{10pt}
+
+\[ \int y \; \mathrm{d}x \]
+\vspace{10pt}
+
+\[\left(\!\!\!
+\begin{array}{c}
+n \\
+r
+\end{array}
+\!\!\!\right) = {^n}C_r = \frac{n!}{r!(n-r)!}
+\]
+\vspace{10pt}
+
+%with a bigger space
+\[\left(
+\begin{array}{c}
+n \\
+r
+\end{array}
+\right) = {^n}C_r = \frac{n!}{r!(n-r)!}
+\]
+
+
+f^{0}(\lambda) = 
+\begin{cases} 
+0 & \text{if } \lambda \leq 0 \\
+k_{0}(1 + \lambda )e^{-\lambda} & \text{if } \lambda > 0 
+\end{cases}
+
+f^{0}(\lambda) = 
+\begin{cases} 
+0 &  \lambda \leq 0 \\
+k_{0}(1 + \lambda )e^{-\lambda} &  \lambda > 0 
+\end{cases}
+
+
+Find the cumulative distribution function for the doctor's prior distribution and hence find the values \theta _1, \theta _2, such that in the biologists prior distribution Pr (\theta < \theta _1) = Pr(\theta > \theta _2)
+= 0.05
+
+
+
+\end{document}
