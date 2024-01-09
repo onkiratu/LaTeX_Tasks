@@ -1,0 +1,98 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{1} \textbf{Mathematical Concepts}
+
+\textbf{1.1} \textbf{Associative Property}\\
+The associative property states that the grouping of numbers within
+parentheses does not affect the result of the operation. This property
+holds for both addition and multiplication.
+
+• Example: (\emph{a} + \emph{b}) + \emph{c} = \emph{a} + (\emph{b} +
+\emph{c}) or (\emph{a × b}) \emph{× c} = \emph{a ×} (\emph{b × c})\\
+\textbf{1.2} \textbf{Commutative Property}\\
+The commutative property states that the order in which numbers are
+added or multiplied does not affect the result.
+
+• Example: \emph{a} + \emph{b} = \emph{b} + \emph{a} or \emph{a × b} =
+\emph{b × a}\\
+\textbf{1.3} \textbf{Compensation}\\
+Compensation is a mental math strategy where you adjust one of the
+numbers to make the equation easier to solve, and then adjust back
+afterward.
+
+\begin{quote}
+• Example: To add 29+15, you can adjust 29 to 30 and then subtract 1
+from the result: 30+15\emph{−}1 = 44.
+\end{quote}
+
+\textbf{1.4} \textbf{Distributive Property}\\
+The distributive property states that when you multiply a number by the
+sum of two other numbers, it's the same as multiplying the number by
+each of the two numbers separately and then adding those products
+together.
+
+• Example: \emph{a ×} (\emph{b} + \emph{c}) = (\emph{a × b}) + (\emph{a
+× c})\\
+\textbf{1.5} \textbf{Identity Property of One}\\
+The identity property of one states that any number multiplied by one
+remains unchanged.
+
+\begin{quote}
+• Example: \emph{a ×} 1 = \emph{a}
+\end{quote}
+
+1
+
+\end{document}

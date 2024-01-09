@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage{amsmath} % for math spacing
+\begin{document}
+
+Here is a question:
+
+\vspace{10pt} % adds some space before the box
+\noindent % no indent for the box to align with the text
+\framebox(300,50){} % creates a box 300pt wide and 50pt high
+
+% If you want to provide a lined space for writing, you could do something like this:
+\vspace{10pt}
+\noindent
+\framebox[\linewidth]{\raisebox{0pt}[50pt][50pt]{}} % creates a box that spans the width of the page
+
+\end{document}

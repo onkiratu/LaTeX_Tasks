@@ -1,0 +1,202 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{graphicx} % Required for inserting images
+%\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+%\usepackage[left=1.5cm, right=1cm, top=0.5cm, bottom=1.5cm]{geometry}
+\usepackage[left=1.5cm, right=1.5cm, top=0.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{ulem}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{enumitem}
+
+\date{}
+
+\begin{document}
+\fontsize{13}{15} \selectfont %This is 13pt text with 15pt line spacing.
+
+\begin{center}
+ \text{Potterhouse School. \hspace{1cm} Year 6 Math Test: Mixed Topics.} \qquad \\ 
+\end{center} \\ 
+
+Name: ...........................................................  \hspace{0.5cm}  Date: ....................... \hspace{0.5cm}  Class: ......\hspace{0.5cm} [20 marks]
+
+\par
+\vspace*{5pt} 
+\textit{(You must show your working including the times tables of the divisors and multipliers.)  }
+%\vspace{5pt}
+
+\begin{center}
+    \includegraphics[width=14cm]{Year_6_Mixed_Tests/Xx.png}
+\end{center}
+ 
+\begin{enumerate}
+
+\item \quad \( 1344 \div 6 \)
+\vspace{100pt}
+\hline
+\vspace{5pt}
+
+\item \quad \( 6138 \times 4 \)
+\vspace{100pt}
+\hline
+\vspace{5pt}
+
+\item \quad \text{What is the value of the 6 in this number? }
+\( 42689\)
+\vspace{40pt}
+
+\begin{center}
+\begin{tabular}{c@{\hspace{3cm}}c@{\hspace{3cm}}c@{\hspace{3cm}}c}
+  6 & 60 & 6000 & 600 \\  
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} \\
+\end{tabular}
+\end{center}
+\hline
+\vspace{10pt}
+
+\item \quad \text{ What is 5634 rounded to the nearest hundred? }
+\vspace{40pt}
+
+\begin{center}
+\begin{tabular}{c@{\hspace{3cm}}c@{\hspace{3cm}}c@{\hspace{3cm}}c}
+  6000 & 5630 & 5000 & 5600 \\
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} & 
+  \includegraphics[width=1cm]{cross.png} \\
+\end{tabular}
+\end{center}
+\hline
+\vspace{10pt}
+
+\item \quad \text{ Fill in A, B, C and D in the number line below. } 
+\vspace{40pt}
+
+ \begin{tikzpicture}
+    % Draw the main line
+    \draw[->] (0,0) -- (10,0);
+    
+    % Draw tick marks and labels
+    \foreach \x/\label in {0/200000, 2/220000, 4/240000, 6/260000, 8/280000, 10/300000} {
+        \draw (\x,-0.1) -- (\x,0.1);
+        % Omit labels at positions 4 and 8 to leave them blank
+        \ifnum\x=2 \else \ifnum\x=4 \else \ifnum\x=6 \else \ifnum\x=8 \else
+            \node[below] at (\x,-0.2) {\label};
+        \fi\fi\fi\fi
+    }
+    
+    % Draw letters 'X' and 'Y' at positions 4 and 8
+    \node[below] at (2,-0.2) {A};
+    \node[below] at (4,-0.2) {B};
+    \node[below] at (6,-0.2) {C};
+    \node[below] at (8,-0.2) {D};
+    
+\end{tikzpicture}
+
+% \item \quad \text{ Fill in A, B, C and D in the number line below. } 
+% \vspace{40pt}
+
+ % \begin{tikzpicture}
+    % Draw the main line
+   % \draw[->] (0,0) -- (10,0);
+    
+    % Draw tick marks and labels
+   % \foreach \x/\label in {0/-400, 2/-200, 4/0, 6/200, 8/400, 10/600} {
+       % \draw (\x,-0.1) -- (\x,0.1);
+        % Omit labels at positions 4 and 8 to leave them blank
+       % \ifnum\x=2 \else %\ifnum\x=4 \else 
+      %  \ifnum\x=6 \else \ifnum\x=8 \else
+     %       \node[below] at (\x,-0.2) {\label};
+    %    \fi\fi\fi\fi
+  %  }
+    
+    % Draw letters 'X' and 'Y' at positions 4 and 8
+   % \node[below] at (2,-0.2) {A};
+    %\node[below] at (4,-0.2) {B};
+   % \node[below] at (6,-0.2) {C};
+   % \node[below] at (8,-0.2) {D};
+    
+% \end{tikzpicture}
+
+%\text{(9) Fill in X and Y in the number line below. } 
+%\vspace{30pt}
+
+ %\begin{tikzpicture}
+    % Draw the main line
+  %  \draw[->] (0,0) -- (10,0);
+    
+    % Draw tick marks and labels
+   % \foreach \x/\label in {0/4000, 2/4200, 4/4400, 6/4600, 8/4800, 10/5000} {
+    %    \draw (\x,-0.1) -- (\x,0.1);
+        % Omit labels at positions 4 and 8 to leave them blank
+     %   \ifnum\x=4 \else \ifnum\x=8 \else
+      %      \node[below] at (\x,-0.2) {\label};
+       % \fi\fi
+    %}
+    
+    % Draw letters 'X' and 'Y' at positions 4 and 8
+%   \node[below] at (4,-0.2) {A};
+   % \node[below] at (8,-0.2) {B};
+    
+%\end{tikzpicture}
+
+\newpage
+
+\item \quad \text{Write} \bm{\mathit{6984213}} \text{in words. } 
+ %\text{(7) Write} \text{\textit{$\bm{38127}$}} \text{in words. } 
+ \par
+ \vspace{20pt}
+
+\noindent \dotuline{\hspace{17cm}} \\
+\par
+\noindent \dotuline{\hspace{17cm}} \\
+\vspace{10pt}
+\hline
+\vspace{10pt}
+
+\item \quad \text{Write} \textit{\textbf{fifteen million, three hundred and forty-two thousand, nine hundred and }} \\
+\textit{\textbf{sixteen}} \text{in digits.} 
+
+ 
+ \par
+ \vspace{60pt}
+ ..............................................
+
+ \vspace{20pt}
+ \hline
+ \vspace{10pt}
+
+ \item \quad \( 12 + 8 \times (6 + 2) \)
+\vspace{80pt}
+\hline
+\vspace{10pt}
+
+%\item \quad \( 15 \div (3 + 2) \)
+%\vspace{60pt}
+%\hline
+%\vspace{5pt}
+
+ \item 
+\quad \text{If one ship can hold 4123 containers and there are 14 ships, how many containers can be placed } \\
+\quad \text{ in all the ships?}
+\vspace{120pt}
+\hline
+\vspace{5pt}
+
+\item \quad  \text{You have 5732 pens and want to distribute them equally among 12 friends.} \\ 
+\quad \quad \text{(a) How many pens will each friend get?} \\
+\quad \quad \text{(b) How many will remain?}
+\vspace{120pt}
+%\hline
+\vspace{5pt}
+
+\end{enumerate}
+
+\end{document}
